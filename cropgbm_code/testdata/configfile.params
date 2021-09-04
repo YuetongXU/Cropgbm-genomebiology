@@ -1,0 +1,104 @@
+[DEFAULT]
+output_folder = ./
+
+[preprocessed_geno]
+# necessary
+fileprefix = ./testdata/genofile
+fileformat = ped
+
+# semi-necessary
+
+# optional
+plink_path = 
+keep_sampleid_path = ./testdata/ksampleid_file.txt
+remove_sampleid_path =
+extract_snpid_path = ./testdata/ksnpid_file.txt
+exclude_snpid_path =
+snpmaxmiss =
+samplemaxmiss =
+maf_max =
+r2_cutoff =
+
+
+[preprocessed_phe]
+# boolean
+phe_norm = false
+phe_plot = false
+
+# necessary
+phefile_path =
+phe_name =
+
+# semi-necessary
+ppexsampleid_path = 
+ppgroupfile_path = 
+ppgroupid_name =
+num2wordfile_path = 
+
+# optional
+phefile_sep =
+phe_recode =
+ppgroupfile_sep =
+
+
+[structure]
+# boolean
+structure_plot = true
+
+# necessary
+genofile_path = 
+
+# semi-necessary
+n_clusters = 
+sgroupfile_path = 
+sgroupid_name =
+sgroupfile_sep = 
+
+# optional
+redim_mode =
+window_size =
+pca_explained_var =
+cluster_mode =
+optics_min_samples =
+optics_xi =
+optics_min_cluster_size =
+
+
+[engine]
+# boolean
+train = 
+cv = 
+predict = 
+select_feature = false
+bygain_boxplot =
+
+# semi-necessary
+traingeno =
+trainphe =
+testgeno =
+modelfile_path = 
+
+# optional
+validgeno =
+validphe =
+init_model_path = None
+min_detal =
+cv_times =
+cv_nfold =
+min_gain =
+max_colorbar =
+
+# lightgbm
+learning_rate =
+num_leaves =
+num_threads =
+min_data_in_leaf =
+objective =
+device_type =
+max_depth =
+feature_fraction =
+verbosity =
+early_stopping_rounds = 
+num_boost_round =
+verbose_eval = 
+num_class =
