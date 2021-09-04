@@ -1,0 +1,7 @@
+method	species	phe	learning_rate	max_depth	n_estimators	min_data_in_leaf	num_leaves
+lgb	rice	HT	0.1	20	160	20	10
+lgb	sorghum	HT	0.1	5	40	5	20
+lgb	soy	HT	0.1	20	40	20	20
+lgb	spruce	HT	0.1	5	40	20	10
+lgb	switchgrass	HT	0.05	5	40	20	10
+lgb	maize	HT	0.05	5	160	20	10
